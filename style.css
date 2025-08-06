@@ -1,20 +1,25 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
 }
+
 header {
-    background: #333;
+    background: #222;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 header .logo {
     font-size: 2rem;
     font-weight: bold;
+    letter-spacing: 2px;
 }
+
 nav ul {
     padding: 0;
     list-style: none;
@@ -22,51 +27,160 @@ nav ul {
     justify-content: center;
     margin-top: 10px;
 }
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+
 .container, .blog-container {
-    max-width: 960px;
+    max-width: 1000px;
     margin: auto;
-    overflow: hidden;
     padding: 2rem 1.5rem;
 }
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1740&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 0;
+    margin-bottom: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #00bfff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0099cc;
+}
+
+.services {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: #00bfff;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact form textarea {
+    resize: vertical;
+}
+
 footer {
-    background: #333;
+    background: #222;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
 .blog-container {
     max-width: 800px;
 }
+
 .blog-list {
     display: grid;
     gap: 30px;
 }
+
 .blog-post {
-    border: 1px solid #ddd;
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 20px;
+    padding: 25px;
     background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+
 .blog-post h2 {
     color: #333;
     margin-top: 0;
 }
+
+.blog-post h3 {
+    color: #555;
+    margin-top: 1.5rem;
+}
+
 .blog-post .post-meta {
     color: #777;
     font-size: 0.9em;
     margin-bottom: 10px;
 }
+
 .blog-post a {
     display: inline-block;
     margin-top: 10px;
-    color: #007BFF;
+    color: #00bfff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.blog-post a:hover {
+    color: #0099cc;
 }
