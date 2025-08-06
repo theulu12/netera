@@ -116,8 +116,16 @@ nav ul li a:hover {
     margin-bottom: 1rem;
 }
 
-.contact-page {
+.contact-page, .about-us, .services-page {
     text-align: center;
+}
+
+.service-detail {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
 }
 
 .contact-info {
@@ -134,7 +142,7 @@ nav ul li a:hover {
     color: #00bfff;
 }
 
-.contact form {
+.contact-page form {
     max-width: 600px;
     margin: 0 auto;
     display: flex;
@@ -142,14 +150,14 @@ nav ul li a:hover {
     gap: 15px;
 }
 
-.contact form input, .contact form textarea {
+.contact-page form input, .contact-page form textarea {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     width: 100%;
 }
 
-.contact form textarea {
+.contact-page form textarea {
     resize: vertical;
 }
 
@@ -208,3 +216,29 @@ footer {
 .blog-post a:hover {
     color: #0099cc;
 }
+
+/* ---------------------------------- */
+/* ---- Mobil Cihazlar İçin Kod ---- */
+/* ---------------------------------- */
+
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li a {
+        padding: 5px 0;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .service-list {
+        flex-direction: column;
+    }
+}
+
