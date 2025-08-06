@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anasayfa - Netera</title>
+    <title>Anasayfa - NETERA</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">Netera</div>
+        <div class="logo">NETERA</div>
         <nav>
             <ul>
                 <li><a href="index.html">Anasayfa</a></li>
@@ -20,25 +20,49 @@
     </header>
 
     <main class="container">
-        <h1>Hoş Geldiniz!</h1>
-        <p>Ben bir yazılım geliştiricisiyim. Bu sitede projelerimi ve blog yazılarımı paylaşıyorum. Portfolyomu incelemekten çekinmeyin.</p>
-        <section class="projects">
-            <h2>Öne Çıkan Projeler</h2>
-            <div class="project-list">
-                <article>
-                    <h3>Proje 1 Adı</h3>
-                    <p>Bu proje hakkında kısa bir açıklama. Kullandığım teknolojiler ve amacı.</p>
-                </article>
-                <article>
-                    <h3>Proje 2 Adı</h3>
-                    <p>Başka bir projem hakkında açıklama. Buraya daha fazla detay ekleyebilirsiniz.</p>
-                </article>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>İşe Özel Yazılım Çözümleri</h1>
+                <p>İşletmenizin ihtiyaçlarına özel, modern ve verimli yazılım çözümleri geliştiriyoruz.</p>
+                <a href="#contact" class="btn">İletişime Geçin</a>
             </div>
+        </section>
+
+        <section class="services">
+            <h2>Hizmetlerimiz</h2>
+            <div class="service-list">
+                <div class="service-card">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Web Geliştirme</h3>
+                    <p>Özelleştirilmiş, modern ve duyarlı web siteleri oluşturuyoruz.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobil Uygulamalar</h3>
+                    <p>iOS ve Android platformları için yenilikçi mobil uygulamalar geliştiriyoruz.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Yazılım Danışmanlığı</h3>
+                    <p>İşletmenizin dijital dönüşümüne rehberlik ediyoruz.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Bizimle İletişime Geçin</h2>
+            <p>İhtiyaçlarınız hakkında konuşmak için bize ulaşın.</p>
+            <form>
+                <input type="text" name="name" placeholder="Adınız Soyadınız">
+                <input type="email" name="email" placeholder="E-posta Adresiniz">
+                <textarea name="message" rows="5" placeholder="Mesajınız"></textarea>
+                <button type="submit" class="btn">Gönder</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Netera. Tüm hakları saklıdır.</p>
+        <p>&copy; 2025 NETERA. Tüm hakları saklıdır.</p>
     </footer>
 </body>
 </html>
